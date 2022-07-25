@@ -162,6 +162,9 @@ pub mod flash;
 #[cfg(feature = "device-selected")]
 pub mod watchdog;
 
+#[cfg(any(feature = "stm32f769"))]
+pub mod dfsdm;
+
 pub mod state {
     /// Indicates that a peripheral is enabled
     pub struct Enabled;
